@@ -1,16 +1,16 @@
 from core.pyba_logic import PybaLogic
 
 
-class restaurantesLogic(PybaLogic):
+class EndPointsLogic(PybaLogic):
     def init(self):
         super().init()
 
     # Parámetro get
-    def getRestauranteById(self, id):
+    def getAll(self, endpoint):
         database = self.createDatabaseObj()
-        sql = f"SELECT * FROM restaurante where id = '{id}';"
+        sql = f"SELECT * FROM api_otroequipobd.{endpoint};"
         result = database.executeQuery(sql)
         if len(result) != 0:
             return result
         else:
-            return {}
+            return []

@@ -37,7 +37,7 @@ CREATE TABLE `comida` (
 
 LOCK TABLES `comida` WRITE;
 /*!40000 ALTER TABLE `comida` DISABLE KEYS */;
-INSERT INTO `comida` VALUES (1,'pizza','italia',5),(2,'tacos','mexico',4),(3,'sushi','japon',8),(4,'croissant','francia',7),(5,'paella','espagna',9),(6,'lasagna ','italia',8),(7,'arepas','venezuela',5),(8,'empanadas','colombia',3),(9,'donas','estados unidos',3),(10,'hamburguesas','alemania',5),(11,'curry','tailandia',9),(12,'crepas','francia',4),(13,'pupusas','el salvador',2),(14,'nasi goreng','indondesia ',8),(15,'burrito','mexico',3);
+INSERT INTO `comida` VALUES (1,'Pizza','Italia',5),(2,'Tacos','Mexico',4),(3,'Sushi','Japon',8),(4,'Croissant','Francua',7),(5,'Paella','España',9),(6,'Lasagna ','Italia',8),(7,'Arepas','Venezuela',5),(8,'Empanadas','Colombia',3),(9,'Donas','Estados Unidos',3),(10,'Hamburguesas','Alemania',5),(11,'Curry','Tailandia',9),(12,'Crepas','Francia',4),(13,'Pupusas','El Salvador',2),(14,'Nasi goreng','Indondesia ',8),(15,'Burrito','Mexico',3);
 /*!40000 ALTER TABLE `comida` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -65,7 +65,7 @@ CREATE TABLE `cuadrimotos` (
 
 LOCK TABLES `cuadrimotos` WRITE;
 /*!40000 ALTER TABLE `cuadrimotos` DISABLE KEYS */;
-INSERT INTO `cuadrimotos` VALUES (1,'azhgt456','adulto',15,'08:00:00','16:00:00'),(2,'dsfdsogf','nigno',10,'08:00:00','16:00:00'),(3,'ddasfjs','adulto',15,'08:00:00','16:00:00'),(4,'uysfsdfg','nigno',10,'08:00:00','16:00:00'),(5,'ldfsdfy','adulto',15,'08:00:00','16:00:00');
+INSERT INTO `cuadrimotos` VALUES (1,'azhgt456','Adulto',15,'08:00:00','16:00:00'),(2,'dsfdsogf','Infantil',10,'08:00:00','16:00:00'),(3,'ddasfjs','Adulto',15,'08:00:00','16:00:00'),(4,'uysfsdfg','Infantil',10,'08:00:00','16:00:00'),(5,'ldfsdfy','Adulto',15,'08:00:00','16:00:00');
 /*!40000 ALTER TABLE `cuadrimotos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -94,7 +94,7 @@ CREATE TABLE `restaurante` (
 
 LOCK TABLES `restaurante` WRITE;
 /*!40000 ALTER TABLE `restaurante` DISABLE KEYS */;
-INSERT INTO `restaurante` VALUES (1,'restaurante1','09:00:00','18:00:00',15,5,9),(2,'restaurante2','11:00:00','21:00:00',13,7,8.5),(3,'restaurante3','10:30:00','23:00:00',18,9,8),(4,'restaurante4','12:00:00','20:00:00',16,3,9.5),(5,'restaurante5','08:00:00','20:00:00',20,10,8.75);
+INSERT INTO `restaurante` VALUES (1,'Basilico','09:00:00','18:00:00',15,5,9),(2,'Los Balcones','11:00:00','21:00:00',13,7,8.5),(3,'La Parrillada','10:30:00','23:00:00',18,9,8),(4,'Casa Argentina','12:00:00','20:00:00',16,3,9.5),(5,'Al puesto','08:00:00','20:00:00',20,10,8.75);
 /*!40000 ALTER TABLE `restaurante` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -107,4 +107,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-07 10:04:21
+-- Dump completed on 2021-08-08  0:45:44
