@@ -1,8 +1,10 @@
--- MySQL dump 10.13  Distrib 8.0.25, for Win64 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `heroku_b1d10f4065d1053` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `heroku_b1d10f4065d1053`;
+-- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
 --
--- Host: localhost    Database: api_otroequipobd
+-- Host: us-cdbr-east-04.cleardb.com    Database: heroku_b1d10f4065d1053
 -- ------------------------------------------------------
--- Server version	8.0.25
+-- Server version	5.6.50-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,12 +25,12 @@ DROP TABLE IF EXISTS `comida`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `comida` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `pais` varchar(100) NOT NULL,
   `precio` float NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +39,7 @@ CREATE TABLE `comida` (
 
 LOCK TABLES `comida` WRITE;
 /*!40000 ALTER TABLE `comida` DISABLE KEYS */;
-INSERT INTO `comida` VALUES (1,'Pizza','Italia',5),(2,'Tacos','Mexico',4),(3,'Sushi','Japon',8),(4,'Croissant','Francua',7),(5,'Paella','España',9),(6,'Lasagna ','Italia',8),(7,'Arepas','Venezuela',5),(8,'Empanadas','Colombia',3),(9,'Donas','Estados Unidos',3),(10,'Hamburguesas','Alemania',5),(11,'Curry','Tailandia',9),(12,'Crepas','Francia',4),(13,'Pupusas','El Salvador',2),(14,'Nasi goreng','Indondesia ',8),(15,'Burrito','Mexico',3);
+INSERT INTO `comida` VALUES (1,'Pizza','Italia',5),(2,'Tacos','Mexico',4),(3,'Sushi','Japon',8),(4,'Croissant','Francia',7),(5,'Paella','España',9),(6,'Lasagna ','Italia',8),(7,'Arepas','Venezuela',5),(8,'Empanadas','Colombia',3),(9,'Donas','Estados Unidos',3),(10,'Hamburguesas','Alemania',5),(11,'Curry','Tailandia',9),(12,'Crepas','Francia',4),(13,'Pupusas','El Salvador',2),(14,'Nasi goreng','Indondesia ',8),(15,'Burrito','Mexico',3);
 /*!40000 ALTER TABLE `comida` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -49,14 +51,14 @@ DROP TABLE IF EXISTS `cuadrimotos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `cuadrimotos` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `codigo_cuadri` varchar(45) NOT NULL,
   `tamagno` varchar(45) NOT NULL,
   `precio` float NOT NULL,
   `horario_abre` varchar(100) NOT NULL,
   `horario_cierre` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +79,7 @@ DROP TABLE IF EXISTS `restaurante`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `restaurante` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `horario_inicio` varchar(100) NOT NULL,
   `horario_cierre` varchar(100) NOT NULL,
@@ -85,7 +87,7 @@ CREATE TABLE `restaurante` (
   `distancia_hotel` float NOT NULL,
   `calificacion_cliente` float NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-08  0:45:44
+-- Dump completed on 2021-08-08 11:27:48
